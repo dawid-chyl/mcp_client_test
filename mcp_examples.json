@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "atlassian": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.atlassian.com/v1/sse"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/files"]
+    },
+    "weather": {
+      "url": "https://weather-api.example.com/mcp"
+    },
+    "local_python": {
+      "command": "python",
+      "args": ["my_mcp_server.py"]
+    }
+  }
+} 
